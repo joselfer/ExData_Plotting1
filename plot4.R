@@ -7,12 +7,11 @@ with(epc, plot(DateTime,Global_active_power,type="l",xlab="", ylab="Global Activ
 #topright
 with(epc, plot(DateTime,Voltage,type="l",xlab="datetime", ylab="Voltage"))
 
-
 #bottom left
 with(epc, plot(DateTime,Sub_metering_1,type="l",xlab="", ylab="Energy sub metering"))
 with(epc, points(DateTime,Sub_metering_2, type="l",col="red"))
 with(epc, points(DateTime,Sub_metering_3, type="l",col="blue"))
-legend("topright",pch="--", bty="n", cex=0.8, col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright",lwd=2, bty="n", cex=0.8, col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 #bottom right
 with(epc, plot(DateTime,Global_reactive_power,type="l",xlab="datetime", ylab="Global_reactive_power"))
